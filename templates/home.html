@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Home Page</title>
+  <style>
+      img{
+        width: 100%;
+      }
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">Cluster Jobs</h1>
+    <img src="https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cluster Jobs Banner" class="img-fluid">
+    <h2 class="text-center mt-2 mb-4">About Cluster Jobs</h2>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse fuga eveniet obcaecati nesciunt quos quis labore voluptatibus cumque vitae, illum numquam aperiam, rem aut, consequuntur quisquam beatae amet fugit laudantium.</p>
+    
+    <h2 class="text-center mt-2 mb-5">Cluster Jobs Listings</h2>
+    <div class="lead">
+      {% for job in jobs %}
+       {% include 'job-item.html'%}
+      {% endfor %}
+    </div>
+    
+    <!-- Button  -->
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="mt-4">
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        Copyright-2023 &copy;
+        <a class="text-reset fw-bold" href="#">Cluster-Jobs India LLC</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    </div>
+  
+</body>
+</html>
